@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>New Tab</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica;
+                background-color: #35363A
+            }
+            #supermium {
+                height: 150px;
+                width:  600px;
+		transform: translate(350px, 200px);
+            }
+	    #search {
+                box-sizing: border-box;
+                height: 40px;
+                padding: 30px;
+		width: 400px;
+                background-color: #999999;
+                border-radius: 50px;
+		border-width: 5px;
+		border-style: solid;
+                border-color: #444444;
+            }
+            #search::placeholder {
+                color: #CCCCCC;
+                padding: 8px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+	    #search:focus {
+		color: #FFFFFF;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            #go {
+                cursor: pointer;
+                width: 90px;
+                height: 40px;
+                border-radius: 99px;
+                border: none;
+                font-size: 19px;
+                color: #FFFFFF;
+                background-color: #3399FF;
+            }
+            #go:hover {
+            	background-color: #1177EE;
+            }
+	    form {
+                transform: translate(390px, 225px);
+            }
+        </style>
+</head>
+<body>
+	<img src="supermiumwebpage.png" alt="Supermium Image" id="supermium">  
+        
+	<form action="https://www.startpage.com/do/search" method="get" target="_blank">
+  		<input type="text" name="query" id="search" placeholder="Search in Supermium here..." required>
+  		<button type="submit" id="go">Search!</button>
+	</form> 
+</body>
